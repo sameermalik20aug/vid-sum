@@ -1,0 +1,20 @@
+{
+  "name": "vidsum-frontend-manual",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.4",
+    "@babel/preset-env": "^7.28.3",
+    "@babel/preset-react": "^7.27.1",
+    "esbuild": "^0.24.0",
+    "parcel": "^2.15.4"
+  }
+}
