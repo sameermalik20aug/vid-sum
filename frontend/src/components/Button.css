@@ -1,0 +1,116 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  outline: none;
+  white-space: nowrap;
+}
+
+.btn:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Variants */
+.btn-primary {
+  background-color: #1f2937;
+  color: white;
+  border-color: #1f2937;
+}
+
+.btn-primary:hover:not(.disabled) {
+  background-color: #111827;
+  border-color: #111827;
+}
+
+.btn-outline {
+  background-color: white;
+  color: #374151;
+  border-color: #d1d5db;
+}
+
+.btn-outline:hover:not(.disabled) {
+  background-color: #f9fafb;
+  border-color: #9ca3af;
+}
+
+.btn-secondary {
+  background-color: #f3f4f6;
+  color: #374151;
+  border-color: #f3f4f6;
+}
+
+.btn-secondary:hover:not(.disabled) {
+  background-color: #e5e7eb;
+  border-color: #e5e7eb;
+}
+
+.btn-danger {
+  background-color: #dc2626;
+  color: white;
+  border-color: #dc2626;
+}
+
+.btn-danger:hover:not(.disabled) {
+  background-color: #b91c1c;
+  border-color: #b91c1c;
+}
+
+/* Sizes */
+.btn-small {
+  height: 32px;
+  padding: 0 12px;
+  font-size: 13px;
+}
+
+.btn-default {
+  height: 40px;
+  padding: 0 16px;
+  font-size: 14px;
+}
+
+.btn-large {
+  height: 48px;
+  padding: 0 24px;
+  font-size: 16px;
+}
+
+/* States */
+.btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Icon spacing */
+.btn .button-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.btn .button-icon:only-child {
+  margin-right: 0;
+}
+
+/* Animation for loading spinner */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
